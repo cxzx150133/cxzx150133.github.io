@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>CSS选择器练习</title>
+        <style>
+            /* 标签选择器 */
+            p {
+                color: red;
+                font-family:微软雅黑;
+                font-size:30px;
+                text-align: center;
+            }
+            /* ID 选择器 */
+            #p {
+                color: green;
+            }
+            /* 类选择器 */
+            .p {
+                color: blue;
+            }
+            /* 透明渐变分割线 */
+            hr.style-t {
+                width:80%;
+                margin:0 auto;
+                border: 0;
+                height: 1px;
+                background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));
+            }
+            h1 {
+                font-size: 45px;
+            }
+        </style>
+    </head>
+
+    <body class="body">
+        <table border="1" cellpadding="3" cellspacing="0" align="center">
+            <caption><h1>CSS选择器练习</h1></caption>
+
+            <thead>
+                <tr>
+                    <th>学号</th><th>姓名</th><th>作业名称</th><th>制作日期</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr align="center">
+                    <td>18*******</td>
+                    <td>林**</td>
+                    <td>CSS选择器练习</td>
+                    <td>2018/10/23</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <BR />
+
+        <hr class="style-t"/>
+
+        <h1 align=center>《虞美人》李煜</h1>
+        <p>春花秋月何时了？往事知多少。</p> <!-- 默认 -->
+        <p id="p">小楼昨夜又东风，故国不堪回首月明中。</p> <!-- 使用ID选择器（注意在一份HTML文档中，ID选择器只能使用一次。） -->
+        <p class="p">雕阑玉砌应犹在，只是朱颜改。</p> <!-- 使用类选择器 -->
+        <p style="color: gray;">问君能有几多愁，恰是一江春水向东流。</p> <!-- 直接配置样式 -->
+        
+        <hr class="style-t"/>
+    </body>
+</html>
