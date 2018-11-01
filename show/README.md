@@ -1,3 +1,3 @@
-# ��վ�滮�뽨��γ���ҵЧ��չʾ
+# 网站规划与建设课程作业效果展示
 
-��������: [show](https://cxzx150133.github.io/show/)
+在线链接: [show](https://cxzx150133.github.io/show/)
