@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>文档布局控制</title>
+        <style>
+            <!--
+            /* 文字对齐 */
+            td.top {vertical-align:top;} /* 顶端垂直对齐 */
+            td.middle {vertical-align:middle;} /* 中间垂直对齐 */
+            td.bottom {vertical-align:bottom;} /* 底端垂直对齐 */
+            td.left {text-align:left;}
+            td.center {text-align:center;}
+            td.right {text-align:right;}
+            td.CM {vertical-align:middle;text-align:center;}
+            /* 文字位移 */
+            span.up {vertical-align:10px;}
+            span.down {vertical-align:-10px;}
+            /* 行间距 */
+            p.br {
+                line-height:0.2em; /* normal(1.2em)|length */
+            }
+
+            body {
+                background: black;
+                color: white;
+            }
+            p {
+                font-size: 15px;
+                color: white;
+            }
+            td {
+                color: white;
+            }
+            p span.bigHard {
+                font-size: 60px;
+                float: left;
+                padding-right: 5px;
+                font-weight: bold;
+                font-family: "黑体";
+                color: yellow;
+            }
+            -->
+        </style>
+    </head>
+
+    <body>
+        <table width=50% border="1">
+            <tr>
+                <td rowspan=4><img src="images/image.jpg" border="0" /></td>
+                <td class="top">垂直对齐:顶端(top)</td>
+            </tr>
+            <tr>
+                <td class="middle">垂直对齐:中间(middle)</td>
+            </tr>
+            <tr>
+                <td class="bottom">垂直对齐:底端(bottom)</td>
+            </tr>
+            <tr>
+                <td class="CM">对齐:居中(center &amp middle)</td>
+            </tr>
+        </table>
+        <p>
+            E=mc<span class="up">2</span>
+        </p>
+        <p>
+            <span class="bigHard">春</span>节是中国最重要、最隆重同时也是最富特色的传统节日，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史，中国人过春节已有 4000 多年的历史。
+        </p>
+        <P class="br">
+            在春节期间，中国的汉族和一些少数民族都要举行各种庆祝活动。
+        </P>
+        <p>在春节期间，中国的汉族和一些少数民族都要举行各种庆祝活动。</p>
+        <p>在春节期间，中国的汉族和一些少数民族都要举行各种庆祝活动。</p>
+        <hr />
+        <a href="second.html" style="color:green;"><font size=60>匆匆</font></a>
+    </body>
+</html>
