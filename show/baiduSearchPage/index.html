@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>百度搜索页面模拟</title>
+    <style>
+        p {
+            margin: 0px;
+            font-family: Arial; /* 定义默认字体 */
+        }
+        p.title {
+            padding-bottom: 0px;
+            font-size: 16px;
+        }
+        p.content {
+            padding-top: 3px;   /* 标题与内容距离 */
+            font-size: 13px;    /* 内容的字体大小 */
+            line-height: 18px;
+        }
+        p.link {
+            font-size: 13px;
+            color: #008000;     /* 网址颜色 */
+            padding-bottom: 25px;
+        }
+        span.search {
+            color: #c60a00; /* 匹配到的关键字颜色 */
+        }
+        span.quick {
+            color: #666666; /* 快照颜色 */
+            text-decoration: underline; /* 快照的下划线 */
+        }
+        /* 让标题处的关键字下划线也变成红色 */
+        p.title span.search {
+            text-decoration: underline; /* 标题处关键字的下划线 */
+        }
+
+        p.link a.link {
+            color: #008000;
+            text-decoration: none;
+        }
+
+        p.link a.quick {
+            color: #666666; /* 快照颜色 */
+            text-decoration: underline; /* 快照的下划线 */
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" cellpadding="3" cellspacing="0" align="center">
+            <caption><h1>百度搜索页面模拟</h1></caption>
+
+            <thead>
+                <tr>
+                    <th>学号</th><th>姓名</th><th>作业名称</th><th>制作日期</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr align="center">
+                    <td>18*******</td>
+                    <td>林**</td>
+                    <td>百度搜索页面模拟</td>
+                    <td>2018/11/08</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <HR />
+
+    <p><font size="2" color=gray>百度为您找到相关结果约3,990,000个</font></p>
+    <br />
+    <!--
+    <p class="title">
+        <a href="#">中国<span class="search">春节</span></a>
+    </p>
+    <p class="content">
+    欢迎光临中国<span class="search">春节</span>网，您现在的位置中国<span class="search">春节</span>网首页！
+    "年"兽的传说熬年的传说 万年创建历法说 中国古代历法发展<span class="search">春节</span>:传统和现代 元宵灯节源于何时？
+    猜灯谜的来由十二生肖的源流、排列与信仰 祭灶 扫尘 贴春联 年画 倒贴福字 除夕夜 ...
+    </p>
+    <p class="link">
+    www.chunjie.net.cn/ 46K 2016-12-18 - <span class="quick">百度快照</span>
+    </p>
+    -->
+    <p class="title">
+        <a href="http://www.wzvcst.edu.cn/" target="_blank"><span class="search">温州科技职业学院</span> - www</a>
+    </p>
+    <p class="content"></p>
+    <p class="link">
+        <a class="link" href="http://www.wzvcst.edu.cn/" target="_blank">www.wzvcst.edu.cn/</a>
+        -
+        <a class="quick" href="http://cache.baiducontent.com/c?m=9f65cb4a8c8507ed4fece763105392230e54f7267493815439c3933fc4321c564711b2e73a3655599393737070d85e2deae74076207556a09ab89f3aa9ace32c38f85623006d914062c46fabdc3627d656904d99a80ee6cae74490b9a1d6c82255dd2376&p=936ddf0e85cc43fa08e29779087a94&newp=80759a46d1c615f00ebe9b7c4f0080231611c20e38d2c44324b9d71fd325001c1b69e3b822261a02d2c0796215e9241dbdb239256b5574e8cd&user=baidu&fm=sc&query=%CE%C2%D6%DD%BF%C6%BC%BC%D6%B0%D2%B5%D1%A7%D4%BA&qid=9133f47900003d5f&p1=1" target="_blank">百度快照</a>
+        -
+        <a class="quick" href="https://www.baidu.com/tools?url=http%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3D28dhtxcXiuXa8PYxKumEroUZnn-mZXJn1TifrR-kPSOIkap6HMUtUeyO5eCS_aNP&jump=https%3A%2F%2Fkoubei.baidu.com%2Fp%2Fsentry%3Ftitle%3D%02%E6%B8%A9%E5%B7%9E%01%E7%A7%91%E6%8A%80%01%E8%81%8C%E4%B8%9A%01%E5%AD%A6%E9%99%A2%03%20-%20%01www%01%26q%3D%E6%B8%A9%E5%B7%9E%E7%A7%91%E6%8A%80%E8%81%8C%E4%B8%9A%E5%AD%A6%E9%99%A2%26from%3Dps_pc3&key=surl" target="_blank">100%好评</a>
+    </p>
+
+    <p class="title">
+        <a href="https://baike.baidu.com/item/温州科技职业学院/8957703?fr=aladdin" target="_blank"><span class="search">温州科技职业学院</span>_百度百科</a>
+    </p>
+    <img src="images/logo.jpg" style="float:left;height: 80px;padding:0 6px 0;"/>
+    <p class="content">
+        <span class="search">温州科技职业学院</span>（同时挂<span class="search">温州市</span>农业科学研究院牌子）系专科层次公办普通高等<span class="search">职业</span>学校。学校源于1950年8月建立的浙江省立<span class="search">温州</span>农业技术学校；2000年2月，<span class="search">温州市</span>农业科学研究所、<span class="search">温州市</span>蔬菜科学研究所和<span class="search">温州</span>农业学校合并组建<span class="search">温州市</span>农业科学研...<br />
+        <a href="https://www.baidu.com/link?url=vTULTfasMqxgRXPeI4kIDRXpsIYdtWmv6EA8hpi6Gtmt72J2BhBsHccSrRYJqKDTL6i928kLUauzWTaBF4sNu0nHe8hFFGySXFkHzWNbND19LSf5s2QA4Jnx3D1XPOPApO1bbfMDI-GJcxl2XNYytc85LNMJ4rv281sxb0fQXhdM3AIfHaC98-ZBbVIvkF_o&wd=&eqid=9133f47900003d5f000000025be39e98" target="_blank">历史沿革</a>
+        <a href="https://www.baidu.com/link?url=vTULTfasMqxgRXPeI4kIDRXpsIYdtWmv6EA8hpi6Gtmt72J2BhBsHccSrRYJqKDTL6i928kLUauzWTaBF4sNu0nHe8hFFGySXFkHzWNbND19LSf5s2QA4Jnx3D1XPOPApO1bbfMDI-GJcxl2XNYytc85LNMJ4rv281sxb0fQXhawANJUSh6OGYrj5j0MTFnx&wd=&eqid=9133f47900003d5f000000025be39e98" target="_blank">办学条件</a>
+        <a href="https://www.baidu.com/link?url=vTULTfasMqxgRXPeI4kIDRXpsIYdtWmv6EA8hpi6Gtmt72J2BhBsHccSrRYJqKDTL6i928kLUauzWTaBF4sNu0nHe8hFFGySXFkHzWNbND19LSf5s2QA4Jnx3D1XPOPApO1bbfMDI-GJcxl2XNYytc85LNMJ4rv281sxb0fQXhaDGCvJZ3ZRD7d5Mb7LWm7e&wd=&eqid=9133f47900003d5f000000025be39e98" target="_blank">学术研究</a>
+        <a href="https://www.baidu.com/link?url=vTULTfasMqxgRXPeI4kIDRXpsIYdtWmv6EA8hpi6Gtmt72J2BhBsHccSrRYJqKDTL6i928kLUauzWTaBF4sNu0nHe8hFFGySXFkHzWNbND19LSf5s2QA4Jnx3D1XPOPApO1bbfMDI-GJcxl2XNYytc85LNMJ4rv281sxb0fQXhc2_bw2JLLwZBk29WHpw8JY&wd=&eqid=9133f47900003d5f000000025be39e98" target="_blank">文化传统</a>
+        <a href="https://www.baidu.com/link?url=vTULTfasMqxgRXPeI4kIDRXpsIYdtWmv6EA8hpi6Gtmt72J2BhBsHccSrRYJqKDTL6i928kLUauzWTaBF4sNu0nHe8hFFGySXFkHzWNbND19LSf5s2QA4Jnx3D1XPOPApO1bbfMDI-GJcxl2XNYytc85LNMJ4rv281sxb0fQXhajRNDx7rxDyE8rMaQIVja1&wd=&eqid=9133f47900003d5f000000025be39e98" target="_blank">现任领导</a>
+    </p>
+    <p class="link">
+        https://baike.baidu.com/
+    </p>
+
+    <p class="title">
+        <a href="http://wzvcst.fanya.chaoxing.com/portal" target="_blank"><span class="search">温州科技职业学院</span>网络教学平台</a>
+    </p>
+    <img src="images/pic1.png" style="float:left;height: 40px;padding:0 6px 6px 0;" />
+    <p class="content">
+        姜军 思想道德修养与法律基础 金融基本技能 农产品经纪人 花卉生产<span class="search">技术</span> 宠物文化 更多 新闻公告 1...
+    </p>
+    <p class="link">
+        <a class="link" href="https://www.baidu.com/link?url=olbq-JAynr789lDyyE1ZCNnztMuTKxde9XK-s7x2C7ZoPlBY933jqbD4tljPHsLh&wd=&eqid=9133f47900003d5f000000025be39e98" target="_blank">wzvcst.fanya.chaoxing....</a>
+         -
+        <a class="quick" href="http://cache.baiducontent.com/c?m=9d78d513d9d430d84f9c94697b12c0106f4381132ba7a4020ed08438e2732b30506793ac51260774d1d20a6716df4e4beb802104341453b28cbe8e5dadc8866f6fd6286e365ac45613a004b28e0e619061d64de9d84db4e6bb6184aea58285070e8008592f97f0fc0b5d4bd7&p=c97fc54addc10abc02be9b7c4a4a&newp=9963c116d9c119e505bd9b750f4092695d0fc20e3fd1d201298ffe0cc4241a1a1a3aecbf23211a0ed0c37d6704ad425aeff535763d0034f1f689df08d2ecce7e77c27a&user=baidu&fm=sc&query=%CE%C2%D6%DD%BF%C6%BC%BC%D6%B0%D2%B5%D1%A7%D4%BA&qid=9133f47900003d5f&p1=3" target="_blank">百度快照</a>
+    </p>
+
+    <p class="title">
+        <a href="http://zs.wzvcst.cn/" target="_blank"><span class="search">温州科技职业学院</span>招生网</a>
+    </p>
+    <p class="content">
+        学校概况 农业与生物技术学院 动物科学学院 园林与水利工程学院 信息技术学院 经贸管理学院 招生动态更多14 2018-09 <span class="search">温州科技职业学院</span>2018年新生报到须知 2018级新生...
+    </p>
+    <p class="link">
+        <a class="link" href="http://cache.baiducontent.com/c?m=9d78d513d9d430d84f9c94697b12c0106f4381132ba7a4020ed08438e2732b30506793ac51260774d1d20a6716df4e4beb802104341453b28cbe8e5dadc8866f6fd6286e365ac45613a004b2830732c157d512adfe58a1adf045c2f2cf&p=c060c54ad5c443e74ebe9b7c5056cb&newp=8b2a9729948403bc08e297790f4780231611c20e38d5c44324b9d71fd325001c1b69e3b822261a02d2c0796215e9241dbdb239256b554cf5dc8a9b&user=baidu&fm=sc&query=%CE%C2%D6%DD%BF%C6%BC%BC%D6%B0%D2%B5%D1%A7%D4%BA&qid=9133f47900003d5f&p1=4" target="_blank">zs.wzvcst.cn/</a>
+         -
+        <a class="quick" href="http://cache.baiducontent.com/c?m=9d78d513d9d430d84f9c94697b12c0106f4381132ba7a4020ed08438e2732b30506793ac51260774d1d20a6716df4e4beb802104341453b28cbe8e5dadc8866f6fd6286e365ac45613a004b2830732c157d512adfe58a1adf045c2f2cf&p=c060c54ad5c443e74ebe9b7c5056cb&newp=8b2a9729948403bc08e297790f4780231611c20e38d5c44324b9d71fd325001c1b69e3b822261a02d2c0796215e9241dbdb239256b554cf5dc8a9b&user=baidu&fm=sc&query=%CE%C2%D6%DD%BF%C6%BC%BC%D6%B0%D2%B5%D1%A7%D4%BA&qid=9133f47900003d5f&p1=4" target="_blank">百度快照</a>
+        -
+        <a class="quick" href="https://www.baidu.com/tools?url=http%3A%2F%2Fwww.baidu.com%2Flink%3Furl%3D28dhtxcXiuXa8PYxKumEroUZnn-mZXJn1TifrR-kPSOIkap6HMUtUeyO5eCS_aNP&jump=https%3A%2F%2Fkoubei.baidu.com%2Fp%2Fsentry%3Ftitle%3D%02%E6%B8%A9%E5%B7%9E%01%E7%A7%91%E6%8A%80%01%E8%81%8C%E4%B8%9A%01%E5%AD%A6%E9%99%A2%03%20-%20%01www%01%26q%3D%E6%B8%A9%E5%B7%9E%E7%A7%91%E6%8A%80%E8%81%8C%E4%B8%9A%E5%AD%A6%E9%99%A2%26from%3Dps_pc3&key=surl" target="_blank">100%好评</a>
+    </p>
+</body>
+</html>
