@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+        <title> CSS/DIV 布局练习 </title>
+        <style>
+            img.test1 {
+                border-style: solid; /*   实线   */
+                border-color: blue;  /* 边框颜色 */
+                border-width: 5px;   /* 边框粗细 */
+            }
+            img.test2 {
+                border-style: dashed; /*   虚线   */
+                border-color: red;    /* 边框颜色 */
+                border-width: 2px;    /* 边框粗细 */
+            }
+            img.test3 {
+                border-style: dotted; /*   点线   */
+                border-color: #000;   /* 边框颜色 */
+                border-width: 3px;    /* 边框粗细 */
+            }
+            img.test4 {
+                border-style: double; /*  双实线  */
+                border-color: green;  /* 边框颜色 */
+                border-width: 3px;    /* 边框粗细 */
+            }
+            img.test5 {
+                border-style: solid dashed dotted double; /*  上右下左  */
+                /*
+                    等价于：
+                        border-top-style: solid;
+                        border-right-style: dashed;
+                        border-bottom-style: dotted;
+                        border-left-style: double;
+                    顺序不可换，为上、右、下、左。
+                 */
+                border-color: blue;  /* 边框颜色 */
+                border-width: 3px;   /* 边框粗细 */
+            }
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            div.container {
+                width: 430px;
+                padding-left: 30px;
+             }
+             .one .left {
+                float: left;
+                width: 85px;
+                height: 30px;
+                margin-top: 10px; /* 顶部留白 */
+                /*
+                    等价于：
+                        margin: 10px auto auto auto;
+                    顺序不可换，为上、右、下、左。
+                    顺便说一下：
+                        margin: 10px 5px 15px;
+                    上外边距是 10px，右外边距和左外边距是 5px，下外边距是 15px 。
+                        margin:10px 5px;
+                    上外边距和下外边距是 10px，右外边距和左外边距是 5px 。
+                        margin:10px;
+                    所有 4 个外边距都是 10px
+                */
+             }
+             .one .right {
+                float: right;
+                width: 345px;
+                border-bottom: #CCCCCC 1px dashed; /* 底部边框 */
+                /*
+                    等价于:
+                        border-bottom-color: #CCCCCC;
+                        border-bottom-width: 1px;
+                        border-bottom-style: dashed;
+                    顺序可换，无歧义。
+                */
+                height: 35px;
+                margin-bottom: 15px;
+                /*
+                    等价于：
+                        margin: auto auto 10px auto;
+                    顺序不可换，为上、右、下、左。
+                */
+             }
+             .two .left {
+                float: left;
+                width: 120px;
+                height: 85px;
+             }
+             .two .right {
+                float: right;
+                width: 280px;
+                height: 85px;
+                padding-left: 30px;
+             }
+             .two .left img {
+                border: #FF3300 1px solid;
+                margin-left: 5px;
+             }
+             .two .right h3 {
+                color: #FF0000;
+                padding-bottom: 10px;
+                font-size: 16px;
+             }
+             .two .right ul {
+                padding-left: 10px;
+                font-size: 14px;
+             }
+             .two .right li {
+                padding-bottom: 5px;
+             }
+
+        </style>
+    </head>
+
+    <body>
+        <table border=0 align="Center">
+            <thead align=Center>
+                <tr><td>默认</td><td>实线</td><td>虚线</td><td>点线</td><td>双实线</td><td>手动指定</td></tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src="images/tuzi.jpg" /></td>
+                    <td><img class="test1" src="images/tuzi.jpg" /></td>
+                    <td><img class="test2" src="images/tuzi.jpg" /></td>
+                    <td><img class="test3" src="images/tuzi.jpg" /></td>
+                    <td><img class="test4" src="images/tuzi.jpg" /></td>
+                    <td><img class="test5" src="images/tuzi.jpg" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <HR />
+        <div class="container">
+            <div class="one">
+                <div class="left"><img src="images/001.jpg" /></div>
+                <div class="right"></div>
+            </div>
+            <div class="two">
+                <div class="left"><img src="images/002.jpg" /></div>
+                <div class="right">
+                    <h3>性感透视衫席卷 8 月街头</h3>
+                    <ul>
+                        <li>明星来示范 早秋穿搭有新招</li>
+                        <li>时尚女生 2011 早秋的色调搭</li>
+                        <li>秋风起 最潮手袋购入必读美容</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="one">
+                <div class="left"><img src="images/003.jpg" /></div>
+                <div class="right"></div>
+            </div>
+            <div class="two">
+                <div class="left"><img src="images/004.jpg" /></div>
+                <div class="right">
+                    <h3>海滩度假造型 成就假日摩登女郎</h3>
+                    <ul>
+                        <li>9 款网友口碑超赞的滋润面霜</li>
+                        <li>艺术家眼妆演绎迪士尼经典</li>
+                        <li>6 大恶习 让你白不回来！</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="one">
+                <div class="left"><img src="images/005.jpg" /></div>
+                <div class="right"></div>
+            </div>
+            <div class="two">
+                <div class="left"><img src="images/006.jpg" /></div>
+                <div class="right">
+                    <h3>夏日随心搭</h3>
+                    <ul>
+                        <li>热销男士洁面排行榜 TOP10</li>
+                        <li>达人晒其家当 超范超给力</li>
+                        <li>左手团购 右手返利</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="one">
+                <div class="left"><img src="images/007.jpg" /></div>
+                <div class="right"></div>
+            </div>
+            <div class="two">
+                <div class="left"><img src="images/008.jpg" /></div>
+                <div class="right">
+                    <h3>店主清新文艺风美搭</h3>
+                    <ul>
+                        <li>年中大促 PK 22 款秒杀单品</li>
+                        <li>潮流掌控 今夏最宠粗跟鞋</li>
+                        <li>50 元以下潮包大合集 超美</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
