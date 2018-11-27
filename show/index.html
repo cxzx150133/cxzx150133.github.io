@@ -1,9 +1,61 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>网站规划与建设课程作业效果展示</title>
     </head>
+
     <body>
+        <script type="text/javascript">
+            var a = [
+                        ["HTML 基本标签的使用","2018/10/23","paragraph"],
+                        ["HTML 列表及超链接标签的使用","2018/10/16","list"],
+                        ["HTML 表格标签及自学内容marquee标签的使用","2018/10/18","table"],
+                        ["HTML 几种常见 CSS 选择器的使用","2018/10/23","cssSelectors"],
+                        ["CSS 伪类选择器的使用","2018/10/30","cssSelectors2"],
+                        ["CSS 字体属性控制练习","2018/11/01","cssFontStyle"],
+                        ["CSS 文档排版练习","2018/11/06","textTypography"],
+                        ["百度搜索结果页面模拟","2018/11/08","BaiduSearchPage"],
+                        ["淘宝栏目页面模拟","2018/11/13","TaoBaoPage"],
+                        ["容器内外边距","2018/11/15","paddingAndMargin"],
+                        ["个人主页设计(默认Table排版,IE居中正常)","2018/11/20","myWebsite"],
+                        ["个人主页设计(基本DIV框架)","2018/11/20","myWebsite/BasicDivFramework.html"],
+                        ["个人主页设计(准DIV排版)","2018/11/20","myWebsite-Div"],
+                        ["音乐网站首页设计(默认Table排版)","2018/11/27","myMusicWebsite"],
+                        ["音乐网站首页设计(基本DIV框架)","2018/11/27","myMusicWebsite-Div/BasicDivFramework.html"],
+                        ["音乐网站首页设计(纯Div排版)","2018/11/27","myMusicWebsite-Div"],
+                        ["纯Div排版三栏网页","2018/11/27","3-div-Framework"],
+                    ];
+            var out_s = "";
+            /*
+            document.write('<table border="1" cellpadding="3" cellspacing="0" align="center" width="600">');
+            document.write('<caption><h2>网站规划与建设课程作业效果展示</h2></caption>');
+            document.write('<thead> <tr><th>作业内容</th><th>完成日期</th><th>链接</th></tr> </thead>');
+            document.write('<tbody>');
+            for(var i=0;i<a.length;i++) {
+                document.write('<tr align="center">');
+                document.write('<td>'+a[i][0]+'</td>');
+                document.write('<td>'+a[i][1]+'</td>');
+                document.write('<td><a href="'+a[i][2]+'/" '+'target="_self">'+'打开'+'</a></td>');
+                document.write('</tr>');
+            }
+            document.write('</tbody>');
+            document.write('</table>');
+            */
+            out_s+= '<table border="1" cellpadding="3" cellspacing="0" align="center" width="600">' +
+                    '<caption><h2>网站规划与建设课程作业效果展示</h2></caption>' +
+                    '<thead> <tr><th>作业内容</th><th>完成日期</th><th>链接</th></tr> </thead>' +
+                    '<tbody>';
+            for(var i=0;i<a.length;i++) {
+                out_s+= '<tr align="center">' +
+                        '<td>'+a[i][0]+'</td>' + '<td>'+a[i][1]+'</td>' +
+                        '<td><a href="'+a[i][2]+'/" '+'target="_self">'+'打开'+'</a></td>' +
+                        '</tr>';
+            }
+            out_s+= '</tbody>' + '</table>';
+            document.write(out_s);
+        </script>
+        <!--
         <table border="1" cellpadding="3" cellspacing="0" align="center">
             <caption><h2>网站规划与建设课程作业效果展示</h2></caption>
 
@@ -71,5 +123,7 @@
                 </tr>
             </tbody>
         </table>
+        <hr />
+        -->
     </body>
 </html>
