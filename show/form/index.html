@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HTML form</title>
+    <style>
+		form {
+			border: 1px dotted #AAAAAA;
+			padding: 3px 6px 3px 6px;
+			margin: 0px;
+			font: 14px Arial;
+		}
+		input {
+			color: #00008B;
+			background-color: #ADD8E6;
+			border: 1px solid #00008B;
+		}
+		select {
+			width: 80px;
+			color: #00008B;
+			background-color: #ADD8E6;
+			border: 1px solid #00008B;
+		}
+		textarea {
+			width: 200px;
+			height: 40px;
+			color: #00008B;
+			background-color: #ADD8E6;
+			border: 1px solid #00008B;
+		}
+	</style>
+    <script type="text/javascript">
+		function checkInput() {
+			var name = document.getElementById("name").value;
+			var color = document.getElementById("color").value;
+			if (!name) {
+				alert("姓名不能为空！");
+				history("-1");
+			} else {
+				alert("你好,"+name+"你最喜欢的颜色是"+color+".");
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form id="formid"  name="myform" method="post" onsubmit="return checkInput();">
+    	<p>
+        	请输入您的姓名: <br />
+            <input text="text" name="name" id="name" />
+        </p>
+        <p>
+        	请选择您最喜欢的颜色: <br />
+        	<select name="color" id="color">
+            	<option value="red">红</option>
+            	<option value="green">绿</option>
+            	<option value="blue">蓝</option>
+            	<option value="yellow">黄</option>
+            	<option value="cyan">青</option>
+            	<option value="purple">紫</option>
+            </select>
+        </p>
+        <p>
+        	请问你的性别: <br />
+            <!-- 控件同name同组别 -->
+            <input type="radio" name="sex" id="male" value="male" />男<br />
+            <input type="radio" name="sex" id="female" value="female" />女<br />
+        </p>
+        <p>
+        	你喜欢做什么: <br />
+            <input type="checkbox" name="hobby" id="book" value="book" />看书<br />
+            <input type="checkbox" name="hobby" id="net" value="net" />上网<br />
+            <input type="checkbox" name="hobby" id="sleep" value="sleep" />睡觉<br />
+        </p>
+        <p>
+        	我要留言: <br />
+            <textarea name="comments" id="comments" cols="30" rows="4"></textarea><!-- 30x4 -->
+        </p>
+        <p>
+        	<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit"/>
+        </p>
+    </form>
+</body>
+</html>
