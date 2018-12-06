@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>图片浏览</title>
+<style type="text/css">
+	body {
+		background-color: #CCCCCC;
+	}
+	.container {
+		position: relative;
+		margin-left: 50x;
+		margin-top: 50px;
+	}
+	.picture img {
+		border: 1px solid write;
+		margin: 0 5px 5px 0;
+	}
+	.picture:hover {
+		background-color: transparent;
+	}
+	.picture:hover img {
+		border: 2px solid blue;
+	}
+	.picture .small-pic {
+		width: 100px;
+		height: 60px;
+		border: #ff6600 2px solid;
+	}
+	.picture span {
+		position: absolute;
+		background-color: #FFCC33;
+		padding: 5px;
+		left: -1000px;
+		border: 1px dashed gray;
+		visibility: hidden;
+		color: black;
+		font-weight: 800;
+		text-decoration: none;
+		text-align: center;
+	}
+	.picture span img {
+		border-width: 0;
+		padding: 2px;
+		width: 400px;
+		height: 300px;
+	}
+	.picture:hover span {
+		visibility: visible;
+		top: 0;
+		left: 230px;
+	}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<a class="picture" href="#">
+    	<img class="small-pic" src="images/small-1.jpg" />
+        <span><img src="images/1.jpg" /><br />卤煮火烧 北京的传统小吃</span>
+    </a>
+	<a class="picture" href="#">
+    	<img class="small-pic" src="images/small-2.jpg" />
+        <span><img src="images/2.jpg" /><br />台湾菜式 药材米酒香气的烧酒鸡</span>
+    </a><br />
+	<a class="picture" href="#">
+    	<img class="small-pic" src="images/small-3.jpg" />
+        <span><img src="images/3.jpg" /><br />福建菜 十香醉排骨</span>
+    </a>
+	<a class="picture" href="#">
+    	<img class="small-pic" src="images/small-4.jpg" />
+        <span><img src="images/4.jpg" /><br />家常菜 宫保鸡丁</span>
+    </a><br />
+	<a class="picture" href="#">
+    	<img class="small-pic" src="images/small-6.jpg" />
+        <span><img src="images/6.jpg" /><br />中华美食 东坡肘子</span>
+    </a>
+	<a class="picture" href="#">
+    	<img class="small-pic" src="images/small-5.jpg" />
+        <span><img src="images/5.jpg" /><br />毛主席爱吃的毛氏红烧肉</span>
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>百度——全球最大的中文搜索引擎</title>
+    <style type="text/css">
+		* {margin: 0px; padding: 0px;}
+		td, p {font-size: 12px;}
+		p {width: 600px; margin: 0px; padding: 0px;}
+		.ff {font-family: Verdana; font-size: 16px;}
+		#navigation {
+			margin: 0 auto;
+			font-size: 12px;
+			padding: 0px;
+			border-bottom: 1px solid #00c;
+			background: #eee;
+			width: 600px;height: 18px;
+		}
+		#navigation li {
+			float: left; /* 水平菜单 */
+			list-style-type: none; /* 不显示项目符号 */
+			margin: 0px;padding: 0px;
+			width: 67px;
+			text-align: center;
+		}
+		#navigation li a {
+			display: block; /* 块显示 */
+			text-decoration: none; /* 下划线样式为无 */
+			padding: 4px 0px 0px 0px;
+			margin: 0px;
+		}
+		#navigation li a:link, #navigation li a:vistied {
+			color: #0000CC;
+		}
+		#navigation li a:hover { /* 鼠标经过 */
+			text-decoration: underline;
+			background: #FFF;
+			padding: 4px 0px 0px 0px;
+			margin: 0px;
+		}
+		#navigation li#h { width: 56px;height: 18px; }    /* 左侧空间 */
+		#navigation li#more { width: 85px;height: 18px; } /* 更多按钮 */
+		#navigation .current {
+			background: #00C;
+			color: #FFF;
+			padding: 4px 0px 0px 0px;
+			margin: 0px;
+			font-weight: bold;
+		}
+		div.center {
+			margin: 0 auto;
+		}
+		div.logo {
+			text-align: center;
+		}
+		div.search {
+			width: 600px;
+			margin: 0 auto;
+		}
+		div.search .text {
+			margin-left: 92px;
+			float: left;
+		}
+		div.search .link {
+			width: 92px;
+			vertical-align: top;
+			margin-left: auto;
+			font-size: 12px;
+		}
+	</style>
+</head>
+
+<body>
+    <div class="center">
+    	<br /><div class="logo"><img src="images/logo.gif" /></div><br /><br /> <br /> <br />
+        <div id="navigation">
+        	<ul>
+            	<li id="h"></li>
+                <li> <a href="#">资 讯</a> </li>
+                <li class="current">网 页</li>
+                <li> <a href="#">贴 吧</a> </li>
+                <li> <a href="#">知 道</a> </li>
+                <li> <a href="#">MP3</a> </li>
+                <li> <a href="#">图 片</a> </li>
+                <li id="more"> <a href="#">更 多 &gt;&gt;</a> </li>
+            </ul>
+        </div>
+        <p style="height:44px;">&nbsp;</p>
+        <div class="search">
+            <div class="text">
+               	<form action="https://www.baidu.com/s">
+                   	<input type="text" name="wd" class="ff" size="35" placeholder="请输入你要搜索的内容"/>
+                    <input type="submit" value="百度搜索" style="padding: 1px 5px;"/>
+                </form>
+            </div>
+            <div class="link">
+             	<a href="#">搜索帮助</a><br />
+                <a href="#">高级搜索</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
