@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 10px;
+}
+/* 正文外边框 */
+#content {
+	border-left: 1px solid #11a3ff;
+	border-right: 1px solid #11a3ff;
+	border-bottom: 1px solid #11a3ff;
+	padding: 15px;
+	font-size: 12px;
+}
+ul#tabnav {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	padding-bottom: 23px;
+	border-bottom: 1px solid #11a3ff;
+	font: bold 12px verdana, arial;
+}
+ul#tabnav li {
+	float: left; /* 水平排列 */
+	height: 22px;
+	background-color: #a3dbff;
+	margin: 0px 3px 0px 0px;
+	border: 1px solid #11a3ff;
+}
+ul#tabnav a:link, ul#tabnav a:visited {
+	display: block;
+	color: #006eb3;
+	text-decoration: none;
+	padding: 5px 10px 3px 10px;
+}
+ul#tabnav a:hover {
+	background-color: #006eb3;
+	color: #FFFFFF;
+}
+/* 利用选择器匹配机制实现按 ID 渲染效果 */
+body#home li.home, body#news li.news,
+body#sports li.sports, body#music li.music,
+body#nextstation li.nextstation, body#blog li.blog {
+	border-bottom: 1px solid #FFFFFF; /* 覆盖<ul>的蓝色下边框 */
+	color: #000000;
+	background-color: #FFFFFF;
+}
+body#home li.home a:link, body#home li.home a:visited,
+body#news li.news a:link, body#news li.news a:visited,
+body#sports li.sports a:link, body#sports li.sports a:visited,
+body#music li.music a:link, body#music li.music a:visited,
+body#nextstation li.nextstation a:link, body#nextstation li.nextstation a:visited,
+body#blog li.blog a:link, body#blog li.blog a:visited {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+body#home li.home a:hover,
+body#news li.news a:hover,
+body#sports li.sports a:hover,
+body#music li.music a:hover,
+body#nextstation li.nextstation a:hover,
+body#blog li.blog a:hover {
+	color: #006eb3;
+	text-decoration: underline;
+}
