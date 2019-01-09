@@ -7,7 +7,7 @@ $(function() {
     var Width = $('.banner ul li').width(); //alert(Width);
     var Point = $('.banner ol li'); // alert(Point.length);
     var Index = 0; //用于记录点击的次数，图片的张数(计数器，记录了图片移动的张数)
-    console.log();
+    //console.log();
     //点击小圆点让图片移动
     $.each(Point, function(index, value) { //如果此处我没有用each循环来写，那么我便需要用$(this).index()方法来获取图片的下标
         //让点击的小圆点有class样式，其他li没有class样式
@@ -17,7 +17,7 @@ $(function() {
                 'left': -index * Width
             });
             Index = index;
-            console.log("banner: "+Index);
+            //console.log("banner: "+Index);
             //alert(Index);
         })
     });
