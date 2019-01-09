@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 html {
 	font-size: 625%;
 }
@@ -354,6 +354,18 @@ a {
 	color: #f60;
 }
 
+#footer .top a:link {
+    color: #eee;
+}
+
+#footer .top a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+#footer .top a:visited {
+    color: #ccc;
+}
 
 /*页面尺寸大于639时*/
 @media (min-width:639px) {

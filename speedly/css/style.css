@@ -1,4 +1,4 @@
-@charset 'utf-8';
+﻿@charset 'utf-8';
 
 body,h1,h2,h3,p,ul,ol,form,fieldset,figure {
 	margin: 0;
@@ -48,13 +48,14 @@ a {
 	height: 70px;
 	margin: 0 auto;
 }
-#header .logo {
-	width: 30%;
-	height: 70px;
-	background: url(../img/logo.png) no-repeat;
-	text-indent: -9999px;
-	float: left;
-}
+    #header .logo {
+        width: 30%;
+        height: 70px;
+        background: url(../img/logo.png) no-repeat;
+        text-indent: -9999px;
+        float: left;
+        /* cursor: pointer; */
+    }
 #header .link {
 	width: 55%;
 	height: 70px;
@@ -676,6 +677,18 @@ a {
 }
 
 
+.sm-visible a:link {
+    color: #eee;
+}
+
+.sm-visible a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.sm-visible a:visited {
+    color: #ccc;
+}
 
 
 /*媒体查询，参考部分Bootstrap框架*/
@@ -1037,4 +1050,4 @@ a {
 	.tour strong {
 		font-size: 18px;
 	}
-} 
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
@@ -6,11 +6,10 @@
 	<title>蜗牛旅行社--移动端</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/banner.css">
-	<script src="http://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/banner.js"></script>
 </head>
 <body>
-
 
 <header id="header">
 	<nav class="link">
@@ -52,8 +51,10 @@
 </div>
 
 <div id="search">
-	<input type="text" class="search" placeholder="请输入旅游景点或城市">
-	<button class="button">搜索</button>
+    <form action="https://www.baidu.com/s">
+        <input type="text" class="search" placeholder="请输入旅游景点或城市" name="wd">
+        <button class="button">搜索</button>
+    </form>
 </div>
 
 <div id="tour">
@@ -155,7 +156,7 @@
 
 <footer id="footer">
 	<div class="top">
-		客户端 | 触屏版 | <a href="../index.html">电脑版</a>
+        <a href="" onclick="alert('客户端正在开发中，敬请期待>_<')">客户端</a> | 触屏版 | <a href="../index.html">电脑版</a>
 	</div>
 	<div class="bottom">
 		Copyright © GPLer 蜗牛旅行社 | 苏ICP备120110119号
