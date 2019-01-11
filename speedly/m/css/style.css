@@ -402,7 +402,6 @@ a {
 	.about p,.about address,.ticket .type,.ticket .form,.ticket .form input,.ticket .form .submit,.ticket .new,.information h2, .information h3,.information .price {
 		font-size: 0.18rem;
 	}
-
 }
 
 /*页面尺寸大于479且小于639时*/
@@ -442,7 +441,7 @@ a {
 	}
 }
 
-/*页面尺寸小于479时*/
+/* 页面尺寸小于479时 */
 @media (max-width:479px) {
 	#tour h2,.information .price strong {
 		font-size: 0.18rem;

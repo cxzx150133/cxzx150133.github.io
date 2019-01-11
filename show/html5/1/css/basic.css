@@ -24,7 +24,7 @@ a {
 	background-color: #333;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 	position: relative;
-	z-index: 9999;
+	z-index: 9999; /* 显示在最上面 */
 }
 #header .center {
 	width: 1263px;
@@ -76,6 +76,7 @@ a {
 	height: 320px;
 	display: inline-block;
 	color: #ccc;
+	/* 左上 */
 	text-align: left;
 	vertical-align: top;
 }
